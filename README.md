@@ -1,1 +1,5 @@
 # Word-Embedding-Based-Sentiment-Analysis-on-Restaurant-Reviews
+
+his project builds a Natural Language Processing (NLP) pipeline to analyze the sentiment of restaurant reviews by learning word embeddings through the Continuous Bag of Words (CBOW) model. It starts with cleaning and tokenizing raw review texts, then creates training examples where the model predicts a target word based on its surrounding context words. Using TensorFlow/Keras, the CBOW model is trained to produce dense, 50-dimensional embedding vectors that capture the semantic meaning of words.
+
+After training, the project extracts these word embeddings and computes average embedding vectors to represent entire reviews. Initially, a simple heuristic based on the magnitude of these average embeddings is used to classify sentiments as positive or negative. The project can be further enhanced by training a supervised classifier (e.g., logistic regression or a neural network) on these averaged embeddings using actual sentiment labels, achieving more reliable sentiment predictions.
